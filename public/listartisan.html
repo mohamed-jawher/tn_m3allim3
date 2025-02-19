@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحرفيين في تونس - دليل الحرفيين</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-gray-800">دليل الحرفيين</a>
+            <div class="flex items-center gap-4">
+                <a href="/login.html" class="text-gray-600 hover:text-gray-800">تسجيل الدخول</a>
+                <a href="/signup.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">إنشاء حساب</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- العنوان والبحث -->
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">الحرفيين في تونس</h1>
+            <div class="relative">
+                <input type="text" 
+                       placeholder="ابحث عن حرفي..."
+                       class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                <button class="absolute left-3 top-3 text-gray-400">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- الفلاتر والنتائج -->
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- القائمة الجانبية -->
+            <aside class="w-full md:w-64 space-y-6">
+                <!-- التصنيفات -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold mb-4">المدينة</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> تونس
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> صفاقس
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> سوسة
+                        </label>
+                    </div>
+                </div>
+
+                <!-- التقييمات -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold mb-4">التقييم</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <div class="text-yellow-400">
+                                ★★★★★
+                            </div>
+                            <span class="text-sm text-gray-600 mr-2">(5)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <span class="text-sm text-gray-600 mr-2">(4+)</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- قائمة الحرفيين -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- بطاقة حرفي -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/3761509/pexels-photo-3761509.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">محمد العويني</h3>
+                        <p class="text-gray-600">كهربائي</p>
+                        <div class="mt-2 flex items-center justify-between">
+                            <div class="text-yellow-400">
+                                ★★★★☆ <span class="text-gray-500 text-sm">(15 تقييم)</span>
+                            </div>
+                            <span class="text-gray-500">تونس</span>
+                        </div>
+                        <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                            تواصل مع الحرفي
+                        </button>
+                    </div>
+                </div>
+
+                <!-- المزيد من البطاقات -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://images.pexels.com/photos/7550289/pexels-photo-7550289.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                         class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">سهام القروي</h3>
+                        <p class="text-gray-600">طباخة</p>
+                        <div class="mt-2 flex items-center justify-between">
+                            <div class="text-yellow-400">
+                                ★★★★★ <span class="text-gray-500 text-sm">(32 تقييم)</span>
+                            </div>
+                            <span class="text-gray-500">صفاقس</span>
+                        </div>
+                        <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                            تواصل مع الحرفي
+                        </button>
+                    </div>
+                </div>
+
+                <!-- أضف المزيد من البطاقات بنفس النمط -->
+            </div>
+        </div>
+
+        <!-- الترقيم -->
+        <div class="mt-8 flex justify-center gap-2">
+            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">1</button>
+            <button class="px-4 py-2 bg-white text-gray-600 rounded-lg hover:bg-gray-100">2</button>
+            <button class="px-4 py-2 bg-white text-gray-600 rounded-lg hover:bg-gray-100">3</button>
+        </div>
+    </main>
+
+    <footer class="flex flex-col space-y-10 justify-center m-10 mb-8">
+
+        <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+            <a class="hover:text-gray-900" href="#">الشروط و القوانين</a> &nbsp;
+            <a class="hover:text-gray-900" href="#">سياسة الخصوصية</a>&nbsp;
+            <a class="hover:text-gray-900" href="#">مراسلة الإدارة</a>&nbsp;
+            
+        </nav>
+    
+        <div class="flex justify-center space-x-5">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+            </a>
+            <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+            </a>
+        </div>
+        <p class="text-center text-gray-700 font-medium">&copy; جميع الحقوق محفوظة © 2025 دليل الحرفيين</p>
+    </footer>
+      
+</body>
+</html>
